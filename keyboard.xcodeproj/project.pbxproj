@@ -14,6 +14,10 @@
 		4C5BB992226871E30024BF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BB990226871E30024BF65 /* LaunchScreen.storyboard */; };
 		4C5BB99D226871E30024BF65 /* keyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BB99C226871E30024BF65 /* keyboardTests.swift */; };
 		4C5BB9A8226871E30024BF65 /* keyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BB9A7226871E30024BF65 /* keyboardUITests.swift */; };
+		4C5BB9B8226872340024BF65 /* BinaryKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BB9B5226872340024BF65 /* BinaryKeyboard.swift */; };
+		4C5BB9B9226872340024BF65 /* BinaryKeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BB9B6226872340024BF65 /* BinaryKeyboardObserver.swift */; };
+		4C5BB9BA226872340024BF65 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BB9B7226872340024BF65 /* KeyboardButton.swift */; };
+		4C86FC62227EC2D0003178F4 /* BinaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C86FC61227EC2D0003178F4 /* BinaryTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		4C5BB9A3226871E30024BF65 /* keyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5BB9A7226871E30024BF65 /* keyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardUITests.swift; sourceTree = "<group>"; };
 		4C5BB9A9226871E30024BF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5BB9B5226872340024BF65 /* BinaryKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryKeyboard.swift; sourceTree = "<group>"; };
+		4C5BB9B6226872340024BF65 /* BinaryKeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryKeyboardObserver.swift; sourceTree = "<group>"; };
+		4C5BB9B7226872340024BF65 /* KeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		4C86FC61227EC2D0003178F4 /* BinaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +105,11 @@
 		4C5BB986226871E20024BF65 /* keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4C5BB9B7226872340024BF65 /* KeyboardButton.swift */,
+				4C5BB9B5226872340024BF65 /* BinaryKeyboard.swift */,
+				4C5BB9B6226872340024BF65 /* BinaryKeyboardObserver.swift */,
 				4C5BB987226871E20024BF65 /* AppDelegate.swift */,
+				4C86FC61227EC2D0003178F4 /* BinaryTextField.swift */,
 				4C5BB989226871E20024BF65 /* ViewController.swift */,
 				4C5BB98B226871E20024BF65 /* Main.storyboard */,
 				4C5BB98E226871E30024BF65 /* Assets.xcassets */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C86FC62227EC2D0003178F4 /* BinaryTextField.swift in Sources */,
+				4C5BB9BA226872340024BF65 /* KeyboardButton.swift in Sources */,
 				4C5BB98A226871E20024BF65 /* ViewController.swift in Sources */,
+				4C5BB9B9226872340024BF65 /* BinaryKeyboardObserver.swift in Sources */,
 				4C5BB988226871E20024BF65 /* AppDelegate.swift in Sources */,
+				4C5BB9B8226872340024BF65 /* BinaryKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29RJCX35A7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29RJCX35A7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
